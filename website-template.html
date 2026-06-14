@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium men's grooming salon in Korutla. Hair design, facials, spa treatments. 4.5⭐ rated. Hygiene, professionalism, hospitality.">
+    <title>Richfeel A/C Handsome Care – Premium Men's Salon in Korutla</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f8f8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 30px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: #d4af37;
+            color: #1a1a2e;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background: #e6c24a;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid #d4af37;
+        }
+        .btn-secondary:hover {
+            background: #d4af37;
+            color: #1a1a2e;
+        }
+        section {
+            padding: 60px 20px;
+            background: white;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #1a1a2e;
+        }
+        .section-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .about-content p {
+            margin-bottom: 20px;
+        }
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .highlight-card {
+            background: #f8f8f8;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #d4af37;
+        }
+        .highlight-card h3 {
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+        }
+        .service-card h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        .service-card ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+        .service-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+            font-weight: bold;
+        }
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .testimonial-card {
+            background: #f8f8f8;
+            padding: 25px;
+            border-radius: 8px;
+            border-top: 4px solid #d4af37;
+        }
+        .testimonial-card .stars {
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        .testimonial-card .title {
+            font-weight: bold;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+        .testimonial-card p {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .testimonial-card .author {
+            font-weight: bold;
+            color: #1a1a2e;
+            font-size: 0.95rem;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .contact-box {
+            padding: 25px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+        .contact-box h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+        .contact-box a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        .faq {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .faq-item h4 {
+            color: #d4af37;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .rating-box {
+            text-align: center;
+            background: #f8f8f8;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .rating-box .rating-number {
+            font-size: 2.5rem;
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        .rating-box .rating-count {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<header>
+    <div class="container">
+        <h1>Premium Grooming for the Modern Man</h1>
+        <p>Experience precision, hygiene, and hospitality at Korutla's most trusted men's salon</p>
+        <div class="cta-buttons">
+            <a href="#booking" class="btn btn-primary">Book Your Appointment</a>
+            <a href="tel:+919966177706" class="btn btn-secondary">Call: +91 99661 77706</a>
+        </div>
+    </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Richfeel A/C Handsome Care</h2>
+        <div class="about-content">
+            <p>Richfeel A/C Handsome Care is a premium men's grooming destination established with a vision to redefine personal care for the modern man. We combine traditional barbering techniques with contemporary styling trends, delivering precision craftsmanship in every service.</p>
+            
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>✓ Exceptional Hygiene</h3>
+                    <p>Sanitized equipment and sterilized tools at every step</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>✓ Expert Stylists</h3>
+                    <p>Well-trained professionals with years of grooming expertise</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>✓ Premium Comfort</h3>
+                    <p>Fully air-conditioned environment with premium amenities</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>✓ Quality Products</h3>
+                    <p>Eco-friendly products and specialized treatments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services">
+    <div class="container">
+        <h2 class="section-title">Our Premium Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Precision Hair Design</h3>
+                <p>Elevate your look with our signature precision haircuts and modern styling. Our expert stylists deliver cuts that complement your facial structure and lifestyle.</p>
+                <ul>
+                    <li>Consultation & hair analysis</li>
+                    <li>Custom cut & styling</li>
+                    <li>Finishing touches</li>
+                    <li>Styling tips for home care</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Eco-Friendly Facials</h3>
+                <p>Refresh and rejuvenate your skin with our eco-conscious facial treatments. Using natural, skin-safe products for visible results.</p>
+                <ul>
+                    <li>Skin type assessment</li>
+                    <li>Gentle cleansing & exfoliation</li>
+                    <li>Targeted treatment</li>
+                    <li>Hydration & protection</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Hair Spa Treatment</h3>
+                <p>Restore vitality to stressed, dry, or damaged hair. Deep conditioning, protein infusion, and scalp therapy for healthier hair.</p>
+                <ul>
+                    <li>Pre-treatment consultation</li>
+                    <li>Deep conditioning mask</li>
+                    <li>Scalp massage & therapy</li>
+                    <li>Post-treatment care guide</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Spa & Wellness Services</h3>
+                <p>Complete your grooming routine with full-body and facial spa services designed for the busy professional.</p>
+                <ul>
+                    <li>Relaxation massage</li>
+                    <li>Facial treatments</li>
+                    <li>Specialty packages</li>
+                    <li>Customizable wellness plans</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials">
+    <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="rating-box">
+            <div class="rating-number">⭐⭐⭐⭐⭐ 4.5</div>
+            <div class="rating-count">Based on 95+ customer reviews</div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐ "Best Salon in Korutla"</div>
+                <div class="title">Exceptional Quality</div>
+                <p>"Exceptional cleanliness and amazing hospitality. The staff knows what they're doing, and I always leave feeling refreshed. Highly recommended!"</p>
+                <div class="author">— Ravi K., Korutla</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐ "Top-Ranked & Deserving"</div>
+                <div class="title">Professional Excellence</div>
+                <p>"This is the salon everyone talks about. They get your haircut just right, and the spa services are incredibly relaxing. Worth every visit."</p>
+                <div class="author">— Anand M., Regular Customer</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐ "Premium Experience"</div>
+                <div class="title">Worthy of the Drive</div>
+                <p>"I've been to salons in bigger cities, but Richfeel gives me the same quality and professionalism. Highly impressed with the service and atmosphere."</p>
+                <div class="author">— Suresh T., Korutla</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <h4>Q: What hygiene measures do you follow?</h4>
+                <p>A: We maintain the highest hygiene standards. All equipment is sterilized, tools are sanitized before each use, and our staff follows strict sanitation protocols. We prioritize your health and safety above all.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: Are your products eco-friendly?</h4>
+                <p>A: Yes! We use premium eco-friendly and natural products that are gentle on your skin and hair while being kind to the environment.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: Do I need to book in advance?</h4>
+                <p>A: While walk-ins are welcome, we recommend calling ahead to ensure minimal wait time. Call us at +91 99661 77706 to check availability.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: What should I expect on my first visit?</h4>
+                <p>A: Our stylists will consult with you about your preferences, hair type, and lifestyle. We'll recommend cuts and treatments tailored to you, then deliver exceptional results.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: Are your staff trained professionals?</h4>
+                <p>A: Absolutely! Our team consists of certified stylists and therapists with extensive experience. We invest in continuous training to stay current with latest grooming techniques.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: What are your business hours?</h4>
+                <p>A: We're open 9:00 AM – 9:00 PM, Monday and Wednesday through Sunday. We're closed on Tuesdays.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="booking">
+    <div class="container">
+        <h2 class="section-title">Ready to Experience Premium Grooming?</h2>
+        <p class="section-subtitle">Book your appointment today and discover why we're Korutla's most trusted men's salon</p>
+        
+        <div class="contact-info">
+            <div class="contact-box">
+                <h3>📞 Phone</h3>
+                <a href="tel:+919966177706">+91 99661 77706</a>
+                <p style="margin-top: 10px; color: #999; font-size: 0.9rem;">Call to book or ask questions</p>
+            </div>
+            <div class="contact-box">
+                <h3>📍 Address</h3>
+                <p>RPG7+9J LIC Complex<br>Korutla Main Rd<br>Korutla, Telangana 505326</p>
+            </div>
+            <div class="contact-box">
+                <h3>🕒 Hours</h3>
+                <p>9:00 AM – 9:00 PM<br>Mon, Wed–Sun<br>Closed Tuesdays</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <h3>Richfeel A/C Handsome Care</h3>
+        <p style="margin: 15px 0;">Premium Men's Grooming Salon • Korutla, Telangana</p>
+        <p style="margin: 20px 0; font-size: 0.9rem; opacity: 0.8;">
+            RPG7+9J LIC Complex, Korutla Main Rd | 📞 <a href="tel:+919966177706">+91 99661 77706</a><br>
+            9:00 AM – 9:00 PM | Closed Tuesdays
+        </p>
+        <p style="margin-top: 30px; font-size: 0.85rem; opacity: 0.7;">© 2026 Richfeel A/C Handsome Care. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

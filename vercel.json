@@ -1,0 +1,10 @@
+{
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "devCommand": "next dev",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_SITE_NAME": "Richfeel A/C Handsome Care",
+    "NEXT_PUBLIC_SITE_URL": "@VERCEL_URL"
+  }
+}
